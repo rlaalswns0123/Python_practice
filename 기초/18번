@@ -1,0 +1,4 @@
+def solution(num_list):
+    n_list = sorted(num_list)
+    answer = n_list[:5]
+    return answer
