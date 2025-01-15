@@ -1,0 +1,8 @@
+def solution(rny_string):
+    answer = ""
+    for item in rny_string:
+        if 'm' in item:
+            answer += item.replace('m', 'rn')
+        else:
+            answer += item
+    return answer
