@@ -1,0 +1,8 @@
+def solution(intStrs, k, s, l):
+    answer = []
+    for num_str in intStrs:
+        substring = num_str[s:s+l]
+        num = int(substring)
+        if num > k:
+            answer.append(num)
+    return answer
