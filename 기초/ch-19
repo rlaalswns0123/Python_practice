@@ -1,0 +1,10 @@
+def solution(arr):
+    num = [i for i,x in enumerate(arr) if x == 2]
+    answer = []
+    if len(num)>=2:
+        answer = arr[num[0]:num[-1]+1]
+    elif len(num)==1:
+        answer = [arr[num[0]]]
+    elif not num:
+        answer = [-1]
+    return answer
