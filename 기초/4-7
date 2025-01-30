@@ -1,0 +1,5 @@
+def solution(names):
+    answer = []
+    for i in range(int(len(names)/5)+1):
+        answer += names[i*5:i*5+1]
+    return answer
