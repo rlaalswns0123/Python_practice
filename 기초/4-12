@@ -1,0 +1,16 @@
+def solution(arr):
+    answer = 0
+    while True:
+        new_arr = []
+        for x in arr:
+            if x >= 50 and x % 2 == 0:
+                new_arr.append(x // 2)
+            elif x < 50 and x % 2 == 1:
+                new_arr.append(x * 2 + 1)
+            else:
+                new_arr.append(x)
+        if arr == new_arr:
+            break
+        arr = new_arr
+        answer += 1
+    return answer
