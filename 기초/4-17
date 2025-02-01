@@ -1,0 +1,5 @@
+def solution(myString):
+    answer = ''
+    myString = myString.lower()
+    answer = myString
+    return answer
