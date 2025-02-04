@@ -1,0 +1,9 @@
+def solution(myString, pat):
+    answer = ''
+    try:
+        num_index = myString.rindex(pat)+len(pat)
+        answer = myString[:num_index]
+        return answer
+    except ValueError:
+        return myString
+    return answer
