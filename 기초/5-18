@@ -1,0 +1,11 @@
+def solution(strArr):
+    max_length = max(len(s) for s in strArr)
+
+    count_list = [0] * (max_length + 1) 
+    
+    for s in strArr:
+        count_list[len(s)] += 1
+
+    answer = max(count_list)
+    
+    return answer
