@@ -1,0 +1,6 @@
+def solution(arr):
+    answer = []
+    for i,n in enumerate(arr):
+        for j in range(n):
+            answer += [n]
+    return answer
