@@ -1,0 +1,8 @@
+def solution(arr):
+    n = len(arr)
+
+    num = 1
+    while num < n:
+        num *= 2
+    
+    return arr + [0] * (num - n)
