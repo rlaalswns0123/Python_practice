@@ -1,5 +1,4 @@
 def solution(binomial):
-    answer = 0
     a,op,b = binomial.split()
     
     a = int(a)
