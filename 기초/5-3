@@ -1,0 +1,12 @@
+def solution(myString, pat):
+    answer = 0
+    start = 0
+    while True:
+        answer = myString.find(pat,answer)
+        
+        if answer == -1:
+            break
+        
+        start += 1
+        answer += 1
+    return start
