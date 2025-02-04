@@ -1,0 +1,4 @@
+def solution(myString):
+    answer = myString.split('x')
+    length = [len(word) for word in answer]
+    return length
